@@ -21,3 +21,7 @@ Każdy punkt zmian ma stały identyfikator `change-<pomieszczenie>-<temat>`. Prz
 Etykiety „Nowy punkt” i „Zaktualizowano” oraz filtr odnoszą się do aktualizacji dokumentu z 20.10.2026 względem poprzedniej publikacji. Oznaczono 14 z 42 punktów na podstawie zmian tekstów i ilustracji. Przy kolejnym imporcie zaktualizuj datę, `data-update` i etykiety; nie oznaczaj zmian samego interfejsu jako zmian projektu mieszkania.
 
 „Drukuj / zapisz PDF” przygotowuje pełne zdjęcia i otwiera systemowy wydruk. Zakres obejmuje całe mieszkanie lub wybrane pomieszczenie, niezależnie od filtra ostatnich zmian. W oknie drukowania wybierz zapis do PDF. Style wydruku usuwają nawigację i przyciski, zachowując numerację i ilustracje.
+
+## Spacer 360°
+
+Zakładka „Spacer 360°” (`plan.html#tour`) osadza spacer SentioVR udostępniony przez właściciela projektu. Iframe wczytuje się dopiero po otwarciu zakładki. Wybór pomieszczenia przekazuje parametr `startscene` do oryginalnego odtwarzacza; strzałki w samym spacerze umożliwiają dalsze przechodzenie między wnętrzami. Dostępne są pełny ekran i link do osobnego okna, który uwzględnia ostatnio wybrane pomieszczenie. Panorama pozostaje hostowana w SentioVR i nie jest kopiowana do repozytorium.

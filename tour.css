@@ -1,0 +1,30 @@
+.tour-shell { max-width: 1600px; margin: 0 auto; padding: 24px; }
+.tour-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.tour-heading h1 { font-size: 23px; color: #24332d; margin: 0 0 6px; }
+.tour-heading p { margin: 0; color: #526459; line-height: 1.5; }
+.tour-heading a { display: inline-block; color: #245c4b; padding: 10px 14px; border: 1px solid #bec9c1; border-radius: 6px; background: white; text-decoration: none; }
+.tour-heading a:hover { background: #e8efea; }
+.tour-toolbar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.tour-toolbar label { font-size: 13px; font-weight: 600; color: #24332d; }
+.tour-toolbar select { min-width: 190px; }
+.tour-toolbar button { background: #245c4b; border-color: #245c4b; color: white; }
+.tour-toolbar button:hover { background: #1b493b; }
+#tour-status { margin: 0 0 0 auto; color: #526459; font-size: 12px; line-height: 1.5; }
+.tour-stage { position: relative; width: 100%; height: clamp(420px, 68dvh, 1000px); background: #19231e; border: 1px solid #bec9c1; }
+#tour-frame { width: 100%; height: 100%; border: 0; display: block; }
+.tour-help { margin: 12px 0 0; font-size: 12px; color: #526459; line-height: 1.6; max-width: 85ch; }
+.tour-stage:fullscreen { width: 100vw; height: 100dvh; border: 0; }
+#tour-exit-fullscreen { display: none; position: absolute; top: 12px; right: 12px; background: white; color: #24332d; }
+.tour-stage:fullscreen #tour-exit-fullscreen { display: block; }
+@media (max-width: 750px) {
+  .tour-shell { padding: 18px 12px 28px; }
+  .tour-heading h1 { font-size: 21px; }
+  .tour-heading p { font-size: 13px; }
+  .tour-toolbar label { flex-basis: 100%; }
+  .tour-toolbar select { flex: 1; min-width: 0; }
+  #tour-status { flex-basis: 100%; margin-left: 0; }
+  .tour-stage { height: 65dvh; min-height: 380px; }
+  .project-tabs { gap: 14px; }
+  .project-tabs button { white-space: nowrap; font-size: 12px; }
+}
+@media print { #tour-panel { display: none !important; } }
